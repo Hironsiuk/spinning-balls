@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  background-color: black;
+  overflow: hidden;
+}
+
+.container {
+  height: 75%;
+  width: 75%;
+  background-color: #202020;
+  place-self: center;
+  display: flex;
+  place-content: center;
+  grid-template: 1fr / 1fr;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+}
+
+.ball {
+  display: flex;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: #00cdcd;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+@keyframes spinning {
+  0% {
+    transform: rotate(0deg) translateX(100%);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg) translateX(100%);
+    opacity: 1;
+  }
+}
+
+.ball:nth-child(13) {
+  animation: linear 1s 0ms spinning infinite;
+  background-color: #00ffff;
+}
+
+.ball:nth-child(12) {
+  animation: linear 1s 50ms spinning infinite;
+  background-color: #00f0ff;
+}
+
+.ball:nth-child(11) {
+  animation: linear 1s 100ms spinning infinite;
+  background-color: #00e0ff;
+}
+
+.ball:nth-child(10) {
+  animation: linear 1s 150ms spinning infinite;
+  background-color: #00d0ff;
+}
+
+.ball:nth-child(9) {
+  animation: linear 1s 200ms spinning infinite;
+  background-color: #00c0ff;
+}
+
+.ball:nth-child(8) {
+  animation: linear 1s 250ms spinning infinite;
+  background-color: #00b0ff;
+}
+
+.ball:nth-child(7) {
+  animation: linear 1s 300ms spinning infinite;
+  background-color: #00a0ff;
+}
+
+.ball:nth-child(6) {
+  animation: linear 1s 350ms spinning infinite;
+  background-color: #0090ff;
+}
+
+.ball:nth-child(5) {
+  animation: linear 1s 400ms spinning infinite;
+  background-color: #0080ff;
+}
+
+.ball:nth-child(4) {
+  animation: linear 1s 450ms spinning infinite;
+  background-color: #0070ff;
+}
+
+.ball:nth-child(3) {
+  animation: linear 1s 500ms spinning infinite;
+  background-color: #0060ff;
+}
+
+.ball:nth-child(2) {
+  animation: linear 1s 550ms spinning infinite;
+  background-color: #0050ff;
+}
+
+.ball:nth-child(1) {
+  animation: linear 1s 600ms spinning infinite;
+  background-color: #0040ff;
+}
